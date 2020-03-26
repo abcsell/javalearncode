@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company[
+<!ELEMENT company(employee|manager)*>  //声明一个元素及其子元素
+<!ELEMENT employee(name)>				//声明一个元素及其子元素
+<!ELEMENT manager EMPTY>				//声明了manager的类型
+<!ELEMENT name(#PCDATA)>				//声明它是一个字符串类型
+<!ATTLIST employee sn ID #REQUIRED>		//规定它必须被提供属性值
+<!ATTLIST manager mgrid IDREF #REQUIRED>	//规定它必须被提供属性值，但必须是
+]>											//其中一个元素的属性值
+<company>
+	<employee sn="300212">
+		<name>赵浩</name>
+	</employee>
+	<employee sn="300213">
+		<name>赵昊</name>
+	</employee>
+	<manager mgird = "300212"/>
+</company>

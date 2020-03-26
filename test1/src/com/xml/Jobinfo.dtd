@@ -1,0 +1,9 @@
+<!ELEMENT Jobinfo(#PCDATA)>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Jobinfo SYSTEM "Jobinfo.dtd"><!--外部DTD文件-->
+<就业信息>
+暂无信息
+</就业信息>
+<!Docutype 就业信息[<!ELEMENT 就业信息(#PCDATA)>]>
+<就业信息>暂无信息
+</就业信息>

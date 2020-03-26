@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>
+<! Docutype 就业信息 [<!ELEMENT 就业信息 (#PCDATA)>]> <!-- 内部定义DTD文件 -->
+<就业信息>暂无信息</就业信息>

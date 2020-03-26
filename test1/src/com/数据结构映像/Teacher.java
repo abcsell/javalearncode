@@ -1,28 +1,26 @@
-package com.数据结构树集;
+package com.数据结构映像;
 
-public class Teacher implements Comparable<Object> {//创建教师对象类
+public class Teacher {//创建教师对象类
 //创建成员变量
 	private String schoolname;
 	private String classname;
 	private String teachername;
-	private int teachercode;//工号
+	private String teachercode;//工号
 	private String teachersexy;
 	private String teacherbirthday;
 	private String familyaddress;
 //	带参构造函数
-	public Teacher(String teachername, int teachercode, String teachersexy, String teacherbirthday) {
+	public Teacher(String teachername, String teachercode, String teachersexy, String teacherbirthday) {
 		super();
 		this.teachername = teachername;
 		this.teachercode = teachercode;
 		this.teachersexy = teachersexy;
 		this.teacherbirthday = teacherbirthday;
 	}
-	public int compareTo(Object o) {
-		Teacher t = (Teacher) o;
-		return (t.teachercode - teachercode);
-	}
 	//关于各个属性的访问器
-	
+	public String getTeachercode() {
+		return teachercode;
+	}
 	public String getTeachersexy() {
 		return teachersexy;
 	}
