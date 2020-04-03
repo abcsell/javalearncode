@@ -113,7 +113,7 @@ public class Addframe extends JPanel{
 				Storesystem store = new Storesystem();
 				Connection con = store.getConnection();
 				Statement st = con.createStatement();
-				String sql ="insert into studentinfo values('"+nametext+"','"+codetext+"','"+sexytext+"','"+birthdaytext+"','"+addresstext+"','"+agetext+"','"+gradetext+"','"+majortext+"')";
+				String sql ="insert into studentinfo values('"+nametext+"','"+codetext+"','"+sexytext+"','"+agetext+"','"+addresstext+"','"+birthdaytext+"','"+gradetext+"','"+majortext+"')";
 				st.executeUpdate(sql);
 				ss=new Student(nametext, codetext);
 				ss.setAge(agetext);
