@@ -15,10 +15,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 //创建一个教师信息系统的入口框架类
+@SuppressWarnings("serial")
 public class Teachermanageframe  extends JPanel{
 	static final int WIDTH = 400;//宽度变量
 	static final int HEIGHT =200;//关于高度变量
 	JFrame teacherframe;//创建顶层窗口框架对象
+	@SuppressWarnings("unused")
 	public void teachermanageframe() {
 		teacherframe =new JFrame();//为对象studentframe赋值
 		teacherframe.setTitle("教师信息管理系统");//设置标题

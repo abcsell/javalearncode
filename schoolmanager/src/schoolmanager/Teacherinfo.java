@@ -10,6 +10,7 @@ import javax.swing.*;
 import java.sql.*;
 import java.util.Vector;
 
+@SuppressWarnings("serial")
 public class Teacherinfo extends JPanel{//设计教师类信息系统的框架类
 	//创建各种成员变量
 		static final int WIDTH =700;
@@ -39,6 +40,7 @@ public class Teacherinfo extends JPanel{//设计教师类信息系统的框架类
 			constraints.gridheight = h;
 			add(c,constraints);
 		}
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		public Teacherinfo(String str,String sql) {//构造函数
 			teacherinfoframe = new JFrame();//对象赋值
 			teacherinfoframe.setTitle(str);//设置标题
@@ -189,6 +191,7 @@ public class Teacherinfo extends JPanel{//设计教师类信息系统的框架类
 			//更新按钮，使从数据库表中将数据提取显示到界面中
 			update.addActionListener(new ActionListener() {
 				
+				@SuppressWarnings("static-access")
 				@Override
 				public void actionPerformed(ActionEvent Event) {
 					// TODO 自动生成的方法存根

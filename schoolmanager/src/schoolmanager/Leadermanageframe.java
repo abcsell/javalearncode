@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+@SuppressWarnings("serial")
 public class Leadermanageframe extends JPanel{
 	static final int WIDTH = 400;//宽度变量
 	static final int HEIGHT =200;//关于高度变量
@@ -61,6 +62,7 @@ public class Leadermanageframe extends JPanel{
 //		单击这个按钮，进入到计算机系领导信息系统
 		computerleader.addActionListener(new ActionListener() {
 			
+			@SuppressWarnings("unused")
 			@Override
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
@@ -75,6 +77,7 @@ public class Leadermanageframe extends JPanel{
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
 				String sql = "select * from teacherinfo where duty<>'教师' and major = '生物系'";
+				@SuppressWarnings("unused")
 				Leaderinfo teacherinfomation = new Leaderinfo("生物系领导信息系统",sql);
 			}
 		});
@@ -85,12 +88,14 @@ public class Leadermanageframe extends JPanel{
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
 				String sql = "select * from teacherinfo where duty<>'教师' and major = '机械系'";
+				@SuppressWarnings("unused")
 				Leaderinfo teacherinfomation = new Leaderinfo("机械系领导信息系统",sql);
 			}
 		});
 //		单击这个按钮，进入到学校领导信息系统
 		schoolleader.addActionListener(new ActionListener() {
 			
+			@SuppressWarnings("unused")
 			@Override
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根

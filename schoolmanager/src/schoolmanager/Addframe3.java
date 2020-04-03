@@ -18,6 +18,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+@SuppressWarnings("serial")
 public class Addframe3 extends JPanel{
 	//创建领导信息系统添加信息框架类
 			//创建各种成员变量
@@ -116,6 +117,7 @@ public class Addframe3 extends JPanel{
 			//最后，再将这些值存储到领导对象中，并且这个领导对象是一个静态的对象
 			additionbutton.addActionListener(new ActionListener() {
 				
+				@SuppressWarnings({ "rawtypes", "unchecked" })
 				@Override
 				public void actionPerformed(ActionEvent Event) {
 					try {

@@ -4,6 +4,7 @@ import java.util.Vector;
 import java.sql.*;
 public class Storesystem {//创建存储学生对象类
 	//在数据库中执行sql
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public Vector getstudent(Connection con, String sql) {
 		Vector v = new Vector();//创建容器对象
 		try {

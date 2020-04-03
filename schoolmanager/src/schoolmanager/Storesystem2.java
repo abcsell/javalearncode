@@ -9,6 +9,7 @@ import java.util.Vector;
 
 public class Storesystem2 {//在数据库中查询教师类对象
 	//在数据库中执行sql
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		public Vector getteacher(Connection con, String sql) {
 			Vector v = new Vector();//创建容器对象
 			try {

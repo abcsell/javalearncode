@@ -9,6 +9,7 @@ import java.util.Vector;
 
 public class Storesystem3 {
 	//在数据库中执行sql
+			@SuppressWarnings({ "rawtypes", "unchecked" })
 			public Vector getleader(Connection con, String sql) {
 				Vector v = new Vector();//创建容器对象
 				try {

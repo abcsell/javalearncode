@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+@SuppressWarnings("serial")
 public class Studentmanageframe extends JPanel{
 	static final int WIDTH = 400;//宽度变量
 	static final int HEIGHT =200;//关于高度变量
@@ -69,6 +70,7 @@ public class Studentmanageframe extends JPanel{
 		//单击这个按钮，进入计算机系一班学生信息系统
 		computerone.addActionListener(new ActionListener() {
 			
+			@SuppressWarnings("unused")
 			@Override
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
@@ -83,12 +85,14 @@ public class Studentmanageframe extends JPanel{
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
 				String sql = "select * from studentinfo where class='二班' and major='计算机系'";
+				@SuppressWarnings("unused")
 				Studentinfo info = new Studentinfo("计算机系二班学生信息系统",sql);
 			}
 		});
 		//单击这个按钮，进入计算机系三班学生信息系统
 		computerthree.addActionListener(new ActionListener() {
 			
+			@SuppressWarnings("unused")
 			@Override
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
@@ -103,6 +107,7 @@ public class Studentmanageframe extends JPanel{
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
 				String sql = "select * from studentinfo where class='一班' and major='生物系'";
+				@SuppressWarnings("unused")
 				Studentinfo info = new Studentinfo("生物系一班学生信息系统",sql);
 			}
 		});
@@ -113,12 +118,14 @@ public class Studentmanageframe extends JPanel{
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
 				String sql = "select * from studentinfo where class='一班' and major='机械系'";
+				@SuppressWarnings("unused")
 				Studentinfo info = new Studentinfo("机械系一班学生信息系统",sql);
 			}
 		});
 		//单击这个按钮，进入机械系二班学生信息系统
 		mechtwo.addActionListener(new ActionListener() {
 			
+			@SuppressWarnings("unused")
 			@Override
 			public void actionPerformed(ActionEvent Event) {
 				// TODO 自动生成的方法存根
@@ -133,6 +140,7 @@ public class Studentmanageframe extends JPanel{
 					public void actionPerformed(ActionEvent Event) {
 						// TODO 自动生成的方法存根
 						String sql = "select * from studentinfo where class='三班' and major='机械系'";
+						@SuppressWarnings("unused")
 						Studentinfo info = new Studentinfo("机械系三班学生信息系统",sql);
 					}
 				});

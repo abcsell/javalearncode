@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 import java.util.Vector;
 
+@SuppressWarnings("serial")
 public class Addframe extends JPanel{
 //创建学生信息系统添加信息框架类
 	//创建各种成员变量
@@ -99,6 +100,7 @@ public class Addframe extends JPanel{
 	//最后，再将这些值存储到学生对象中，并且这个学神该对象是一个静态的对象
 	additionbutton.addActionListener(new ActionListener() {
 		
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		@Override
 		public void actionPerformed(ActionEvent Event) {
 			try {

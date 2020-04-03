@@ -21,6 +21,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+@SuppressWarnings("serial")
 public class Leaderinfo extends JPanel{
 	//创建各种成员变量
 			static final int WIDTH =700;
@@ -50,6 +51,7 @@ public class Leaderinfo extends JPanel{
 				constraints.gridheight = h;
 				add(c,constraints);
 			}
+			@SuppressWarnings({ "unchecked", "rawtypes" })
 			public Leaderinfo(String str,String sql) {//构造函数
 				leaderinfoframe = new JFrame();//对象赋值
 				leaderinfoframe.setTitle(str);//设置标题
@@ -200,6 +202,7 @@ public class Leaderinfo extends JPanel{
 				//更新按钮，使从数据库表中将数据提取显示到界面中
 				update.addActionListener(new ActionListener() {
 					
+					@SuppressWarnings({ "static-access" })
 					@Override
 					public void actionPerformed(ActionEvent Event) {
 						// TODO 自动生成的方法存根
